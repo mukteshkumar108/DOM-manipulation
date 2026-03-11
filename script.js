@@ -29,3 +29,21 @@ const imagesUrl = [
 
 // images[0].src = imagesUrl[0]
 
+// Selecting elements in different ways
+
+images.forEach((img, index) => {
+
+    // Load image from array
+    if (imagesUrl[index]) {
+        img.src = imagesUrl[index]
+    }
+
+    // Add border so we see DOM manipulation
+    img.style.border = "4px solid red"
+
+    // Add click interaction
+    img.addEventListener("click", () => {
+        alert(`You clicked image ${index + 1}`)
+    })
+
+})
