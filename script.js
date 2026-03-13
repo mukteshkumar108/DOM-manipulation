@@ -47,8 +47,21 @@
 //     })
 // })
 
-const paragraph = document.querySelector('p')
+// const paragraph = document.querySelector('p')
 
-console.log(paragraph.innerHTML);
+// console.log(paragraph.innerHTML);
 
-paragraph.innerHTML = '<h4>Hiii</h4>'
+// paragraph.innerHTML = '<h4>Hiii</h4>'
+
+// document.querySelector('[procodrr="title"]')
+
+// Select the main roadmap image
+const heroImage = document.querySelector('#css-image');
+
+// 1. Get the current title
+const oldTitle = heroImage.getAttribute('title');
+console.log("Old Title:", oldTitle);
+
+// 2. Set a new source and title
+heroImage.setAttribute('src', 'https://placeholder.com/600x300');
+heroImage.setAttribute('title', '2026 Updated Roadmap');
